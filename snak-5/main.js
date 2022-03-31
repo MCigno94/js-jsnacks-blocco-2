@@ -9,10 +9,11 @@ let secondArray = [1, 23, 4];
 let i = 0;
 console.log(`Lunghezza iniziale prima lista: ${firstArray.length}`);
 console.log(`Lunghezza iniziale seconda lista: ${secondArray.length}`);
-do {
+
+while (firstArray.length !== secondArray.length) {
     secondArray.push(i);
     i++;
-} while (firstArray.length !== secondArray.length);
+}
 
 console.log(`Lunghezza finale prima lista: ${firstArray.length}`);
 console.log(`Lunghezza finale seconda lista: ${secondArray.length}`);
